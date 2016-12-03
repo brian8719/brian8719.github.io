@@ -1,0 +1,145 @@
+	/* Table and cell */	
+table{
+	background-color: rgba(15, 15, 15, 0.75);	
+	border-radius: 10px;
+}
+
+td{
+	margin-bottom: 15%;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	margin-left: auto;
+	margin-right: auto;
+	display; inline;
+	}
+
+	/* Links */
+a:link{
+	color: #0022AA;/* 
+	text-shadow: 0px 0 #000000, -0px 0 #eeeeee, 0 0px #000000, 0 -0px #eeeeee; */
+}
+
+a:visited{	
+	color: #551A8B;
+}
+
+a:hover{	
+	color: #00FFFF;
+}	/* The hover tag needs to be the last tag
+	in the list or else it will be overwritten */
+	
+	
+	/* Lists */
+ul{
+	list-style-type: square;
+	margin-left: 3%;
+}
+
+	/* Icons */
+i{
+	font-size:5vw;
+	/* border: 1px;
+	border-color: #ffffff;
+	text-shadow: 0px 0 #ffffff, -0px 0 #ffffff, 0 0.2px #ffffff, 0 -0.2px #ffffff; */
+	margin-right:1%;
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	/* Nav Menu */
+nav{
+	position: relative;	
+	font-size: 2vw;
+	line-height: 3vw;
+	margin-bottom: 10px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+	/* Drop down menu */
+button.small-menu{
+    display: inline-block;
+    float: left;
+    margin: 0 5%; 
+    background-color: rgba(15, 15, 15, 0.5);
+    color: rgba(44, 62, 80, 0.8);
+    font-size: 5vw;
+    border-radius: 5px;
+}
+  
+button.small-menu:hover,
+button.small-menu:active,			/* Not visible on mobile, needs a cursor */
+button.small-menu:focus{
+    text-decoration: bold;
+    background: rgba(15, 15, 15, 1);
+	border-radius: 5px;
+}
+  
+.dropDownContent{    /*small dropdown menu content*/
+    position:relative;
+    display: inline-block;
+}
+  
+ .small-content{
+	font-size: 3vw;
+	line-height: 4vw;
+	display: none;				/* Hidden unless turned on by script checkScreenWidth() */
+	position:absolute;
+	left: 5%;					/* Same distance as button margin */
+	top: 100%;					/* Sits directly under button */
+	width: 350%;
+	border-radius: 5px;
+	background: rgba(15, 15, 15, 0.9);
+}
+  
+.small-content a{
+    left: 0;
+    text-decoration: none;		/* No underline for touch links */
+    display: inline-block;		/* List view */
+    color: #EEEEEE;
+	margin-bottom: 10%;			/* Space for finger size tolerance */
+}
+  
+.small-content a:hover{			/* Not visible on mobile, needs a cursor */
+   left: 0;
+   color: #00FFFF;
+}
+
+	/* IDs */
+
+i#facebook{
+	color: #3B5998;
+}
+
+i#google{
+	color: #C63D2D;
+}
+
+i#linkedin{
+	color: #4875B4;
+}
+
+#socialMedia{
+	background-color: rgba(15, 15, 15, 0.5);	
+	border-radius: 2px;
+}
+
+
+	/* Classes */
+
+.hidden {
+    display: none;
+}
+
+ .show {
+   display: inline-block;
+ }
+
+.bottom{
+	position:absolute;
+	right:1px;
+	bottom:1px
+}
