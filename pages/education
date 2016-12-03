@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Basic Page Info -->
+	<meta charset="utf-8">
+	<title>Brian O'Rourke</title>
+	<meta name="description" content="Brian O'Rourke CV">
+	<meta name="author" content="C05410045">
+	<meta name="revised" content="C05410045@mydit.ie, 29/11/2016>
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Links to External CSS & JavaScript files -->
+	<link rel="stylesheet" href="../stylesheets/base.css">
+	<link rel="stylesheet" href="../stylesheets/skeleton.css">
+	<link rel="stylesheet" href="../stylesheets/layout.css">
+	<link rel="stylesheet" href="../stylesheets/mystyles.css"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+													<!-- ^Font Awesome Link for brand icons^ -->
+
+	<script type="text/javascript" src="../scripts/myscripts.js"></script>		<!-- Link to external JavaScript file -->
+	
+</head>
+<body onload="checkScreenWidth()">		<!-- Script checks page size and chooses which menu to load 
+											Note: when testing resizing in browser,
+											pages needs to be refreshed to recheck -->
+
+	<!-- Overview/Home Page Layout -->	
+	<div class="container">														<!-- Container to hold whole page -->
+		<header class="full columns"> 											<!-- Spacer between header and Nav bar -->
+			<h1 class="nine columns">Brian O'Rourke								<!-- Title section with flag -->
+				<div class ="two columns" id="flag" height="auto">				<!-- Flag in top corner of page -->
+					<a href ="http://studyroomf.wikia.com/wiki/Greendale_Flag" target="_blank"> <!-- Link to explain flag -->
+						<picture>												<!-- Change image for chaning screen sizes -->
+							<source srcset = "../images/greendale_tab.png" media="(max-width: 959px) and (min-width: 480px)">
+							<source srcset = "../images/greendale_mob.png" media="(max-width: 479px)">
+							<source srcset = "../images/greendale_desk.png">				
+							<img src="../images/greendale_desk.png" width="100%" height="auto">
+						</picture>
+					</a>	
+				</div>		<!-- End of flag div -->
+			</h1>			<!-- End of Title section -->
+			<hr />			<!-- Spacer between Header and Nav bar -->
+			
+			<nav id="nav">
+				<table> <!-- Table of links -->
+				 <tr>
+				  <td>
+					<a href = "home.html">
+						<i class="fa fa-home" style="font-size:3vw" ></i>Home
+					</a>
+				  </td>
+				  <td>
+					<a href = "education.html">
+						<i class="fa fa-graduation-cap" style="font-size:3vw"></i>Education </a>
+				  </td>
+				  <td>
+					<a href = "experience.html">
+						<i class="fa fa-line-chart" style="font-size:3vw"></i>Experience </a>
+				  </td>
+				  <td>
+					<a href = "contact.html">
+						<i class="fa fa-address-card" style="font-size:3vw" ></i>Contact</a>
+				  </td>
+				 </tr>
+				</table> <!-- end of table of links -->
+			<hr />	<!-- Spacer below Nav bar -->
+			</nav>
+			
+			<div class="dropDownContent" id="dropDownContent">
+				<button onclick="openDropDown()" class="small-menu">
+					<i class="fa fa-bars" style="font-size:4vw"></i>
+				</button> <!--small menu for reflexive-->
+				<div class="small-content" id="DropDown">
+					<a href="home.html">
+						<i class="fa fa-home" style="font-size:5vw"></i>   Home
+					</a>
+					<a href="education.html">
+						<i class="fa fa-graduation-cap" style="font-size:4vw"></i>  Education</a>
+					<a href="experience.html">
+						<i class="fa fa-line-chart" style="font-size:4vw"></i>  Experience</a>
+					<a href="contact.html">
+						<i class="fa fa-address-card" style="font-size:4vw"></i>  Contact</a>					
+											<!-- Links to social media pages below -->
+					<a href="https://www.facebook.com" target="_blank">
+						<i id="facebook" class="fa fa-facebook-square" style="font-size:5vw"></i>  Facebook  <!-- Facebook icon -->
+					</a>				
+					<a href="https://plus.google.com/" target="_blank">
+						<i id="google" class="fa fa-google-plus-official" style="font-size:5vw"></i>  Google +   <!-- Google+ icon -->
+					</a>				
+					<a href="https://ie.linkedin.com/" target="_blank">
+						<i id="linkedin" class="fa fa-linkedin-square" style="font-size:5vw"></i>   LinkedIn   <!-- LinkedIn icon -->
+					</a>
+					
+				</div> 		<!-- End of Drop Down Content -->
+			</div>			<!-- End of Drop Down Menu -->
+			
+		</header> <!-- End of Header full columns class -->
+		
+		
+		<div class="first column">
+			<h3>Page Description</h3>
+			<p>This page goves a brief synopsis of my education so far.</p>
+		</div>		<!-- End of first column -->
+		
+		<div class="second column">
+			<h3>Education</h3>
+			<p>I completed my first and second level education in Chapelizod National School and Pobailscoil Iosolde respectively. From here I went to college for a year but dropped out as I found the Electrical Engineering course too theory heavy. As a direct result of this I attained and completed an Electrical Apprenticeship.
+			<br><br>After completing my apprenticeship and qualifying as an Electrician, I returned to DIT and obtained 2 degrees. The first, a level 7 Bachelor of Engineering Technology in Electrical Services Engineering and the second, a Level 8 Bachelor of Science in Electrical Services and Energy Management.
+			<br><br> From here I worked in the Electrical Services Consulting industry for 2 years,after which I returned to DIT once again and am currently completing a Higher Diploma in Computing which I am on course to achieve by the end of 2017.
+			</p>
+		</div>		<!-- End of second column -->
+		
+		<div class="last column">
+			<h3>Contact</h3>
+			Please visit any of the links below for further information or complete the form on the contact page <a href = "contact.html">here</a> if you wish to be contacted.
+			<br><br>				
+			<div id="socialMedia">		<!-- Social Media Icons List -->
+				<a href="https://www.facebook.com" target="_blank">
+					<i id="facebook" class="fa fa-facebook-square" style="font-size:4vw"></i> <!-- Facebook icon -->
+				</a>		
+				<a href="https://plus.google.com/" target="_blank">
+					<i id="google" class="fa fa-google-plus-official" style="font-size:4vw"></i> <!-- Google+ icon -->
+				</a>		
+				<a href="https://ie.linkedin.com/" target="_blank">
+					<i id="linkedin" class="fa fa-linkedin-square" style="font-size:4vw"></i> <!-- LinkedIn icon -->
+				</a>	<!-- End of Social Media List -->
+			</div>	<!-- End of Social Media -->
+		</div> 		<!-- End of final column -->
+		
+	</div>			<!-- End of container -->
+</body>				<!-- End of Body -->
+</html>				<!-- End of Page -->
